@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=10" />
+  <link rel="stylesheet" href="background-test.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#home" class="logo" aria-label="Go to home">
+      <i class="fas fa-code logo-icon"></i>
+      <span class="logo-text" data-content="brandName">Alex Morgan</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-panel" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow" data-content="heroEyebrow">Available for freelance work</p>
+        <h1 data-content="fullName">Alex Morgan</h1>
+        <h2><span class="typing-text">Frontend Developer</span></h2>
+        <p data-content="heroIntro">
+          I create responsive, user-friendly web experiences with modern tools and thoughtful design.
+        </p>
+
+        <div class="quick-facts" data-list="quickFacts"></div>
+
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-code"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+
+        <div class="social-icons" data-socials></div>
+      </div>
+
+      <div class="profile-container reveal" data-delay="120">
+        <div class="profile-vanta-bg" data-vanta-profile aria-hidden="true"></div>
+        <div class="border-outer"></div>
+        <div class="border-middle"></div>
+        <div class="border-inner"></div>
+        <div class="border-container"></div>
+        <div class="pulse-ring"></div>
+        <div class="pulse-ring"></div>
+        <div class="pulse-ring"></div>
+        <img src="profile4-optimized.webp" alt="Profile picture" class="profile-img" data-image="profileImage" fetchpriority="high" decoding="async" />
+      </div>
+    </section>
+
+    <section class="section-panel about-section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About</p>
+        <h2 data-content="aboutTitle">I build websites that feel clear, fast, and easy to use.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <img src="profile3-optimized.webp" alt="About profile" data-image="aboutImage" loading="lazy" decoding="async" />
+        </div>
+        <div class="about-copy reveal" data-delay="100">
+          <div class="about-text" data-about-text>
+            <p>I help people and organizations turn ideas into polished digital experiences.</p>
+          </div>
+          <div class="stats-grid" data-list="stats"></div>
+          <div class="about-actions">
+            <a href="#contact" class="text-link">Let us work together <i class="fas fa-arrow-right"></i></a>
+            <a href="Jebb_San_Francisco_Resume.pdf" class="btn btn-secondary resume-button" download>
+              <i class="fas fa-file-arrow-down"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-panel projects-section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+        <p data-content="projectsIntro">A few example projects you can replace with your own work.</p>
+      </div>
+      <div class="projects-stage">
+        <div class="project-details-panel reveal" data-project-details aria-live="polite"></div>
+        <div class="projects-shell reveal">
+          <button class="project-nav project-nav-prev" type="button" aria-label="Previous project">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <div class="projects-carousel" data-projects aria-live="polite"></div>
+          <button class="project-nav project-nav-next" type="button" aria-label="Next project">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="project-dots" data-project-dots aria-label="Project slides"></div>
+    </section>
+
+    <section class="section-panel skills-section" id="skills">
+      <div class="skills-hero">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools and strengths</h2>
+          <p data-content="skillsIntro">The capabilities I use to design, build, and improve websites.</p>
+        </div>
+        <div class="automation-orbit reveal" aria-hidden="true">
+          <span class="orbit-ring orbit-ring-1"></span>
+          <span class="orbit-ring orbit-ring-2"></span>
+          <span class="orbit-core">
+            <i class="fas fa-gears"></i>
+          </span>
+          <span class="orbit-node node-excel"><i class="fas fa-file-excel"></i><b>Excel</b></span>
+          <span class="orbit-node node-python"><i class="fab fa-python"></i><b>Python</b></span>
+          <span class="orbit-node node-bi"><i class="fas fa-chart-column"></i><b>Power BI</b></span>
+          <span class="orbit-node node-query"><i class="fas fa-database"></i><b>Query</b></span>
+          <span class="orbit-node node-zapier"><i class="fas fa-bolt"></i><b>Zapier</b></span>
+          <span class="orbit-node node-n8n"><i class="fas fa-diagram-project"></i><b>n8n</b></span>
+          <span class="orbit-particle particle-1"></span>
+          <span class="orbit-particle particle-2"></span>
+          <span class="orbit-particle particle-3"></span>
+        </div>
+      </div>
+      <div class="tool-showcase reveal" data-tool-showcase aria-label="Primary tools"></div>
+      <div class="skills-layout">
+        <div class="skill-groups" data-skills></div>
+        <div class="workflow-card reveal" data-delay="100">
+          <h3>How I Work</h3>
+          <ol data-list="workflow"></ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-panel contact-section" id="contact">
+      <div class="contact-hero">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 data-content="contactTitle">Tell me about your project</h2>
+          <p data-content="contactIntro">Send a message and I will get back to you soon.</p>
+        </div>
+        <div class="contact-flow reveal" aria-hidden="true">
+          <div class="flow-node flow-input">
+            <i class="fas fa-database"></i>
+            <span>Data</span>
+          </div>
+          <div class="flow-node flow-clean">
+            <i class="fas fa-filter"></i>
+            <span>Clean</span>
+          </div>
+          <div class="flow-node flow-automate">
+            <i class="fas fa-gears"></i>
+            <span>Automate</span>
+          </div>
+          <div class="flow-node flow-report">
+            <i class="fas fa-chart-column"></i>
+            <span>Report</span>
+          </div>
+          <div class="flow-node flow-message">
+            <i class="fas fa-paper-plane"></i>
+            <span>Message</span>
+          </div>
+          <span class="flow-line line-1"></span>
+          <span class="flow-line line-2"></span>
+          <span class="flow-line line-3"></span>
+          <span class="flow-line line-4"></span>
+          <span class="flow-pulse pulse-1"></span>
+          <span class="flow-pulse pulse-2"></span>
+          <span class="flow-pulse pulse-3"></span>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-details reveal">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span>Email</span>
+              <a href="#" data-contact-email>hello@example.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-location-dot"></i>
+            <div>
+              <span>Location</span>
+              <p data-content="location">Your City, Country</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <span>Response Time</span>
+              <p data-content="responseTime">Usually within 24 hours</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" data-delay="100">
+          <label>
+            Your name
+            <input type="text" name="name" placeholder="Jane Doe" required />
+          </label>
+          <label>
+            Email address
+            <input type="email" name="email" placeholder="jane@example.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell me what you want to build..." required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-note">This opens your email app so you can review the message before sending.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><span data-content="brandName">Alex Morgan</span> <span data-current-year></span></p>
+    <a href="#home" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
+  <script src="site-content.js?v=4"></script>
+  <script src="script.js?v=8"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* Test-only animated background. Delete this file or remove its link to disable. */
+body {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(59, 215, 245, 0.07), transparent 28%),
+    radial-gradient(circle at 80% 0%, rgba(42, 252, 133, 0.07), transparent 24%),
+    linear-gradient(135deg, var(--bg) 0%, var(--bg-2) 100%);
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: -30vmax;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(42, 252, 133, 0.22), transparent 24%),
+    radial-gradient(circle at 78% 18%, rgba(59, 215, 245, 0.18), transparent 25%),
+    radial-gradient(circle at 48% 76%, rgba(255, 122, 102, 0.09), transparent 23%);
+  filter: blur(22px);
+  opacity: 0.78;
+  transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  animation: auroraDrift 24s ease-in-out infinite alternate;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+body::after {
+  inset: -24vmax;
+  background:
+    radial-gradient(circle at 70% 72%, rgba(42, 252, 133, 0.14), transparent 26%),
+    radial-gradient(circle at 24% 68%, rgba(59, 215, 245, 0.13), transparent 24%),
+    radial-gradient(circle at 52% 18%, rgba(255, 209, 102, 0.06), transparent 20%);
+  opacity: 0.55;
+  animation-duration: 34s;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes auroraDrift {
+  0% {
+    transform: translate3d(-3%, -2%, 0) rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: translate3d(4%, 3%, 0) rotate(8deg) scale(1.04);
+  }
+
+  100% {
+    transform: translate3d(2%, -4%, 0) rotate(-6deg) scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    animation: none;
+  }
+}

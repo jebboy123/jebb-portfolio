@@ -1,0 +1,50 @@
+<svg width="1008" height="938" viewBox="0 0 1008 938" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1008" height="938" fill="#FBFBFB"/>
+  <rect width="1008" height="36" fill="#F3F5F8"/>
+  <text x="8" y="22" fill="#202632" font-family="Arial, sans-serif" font-size="14">Regular Enrollment</text>
+  <text x="27" y="68" fill="#BA742D" font-family="Arial, sans-serif" font-size="14">Regular Enrollment</text>
+  <text x="27" y="114" fill="#252B35" font-family="Arial, sans-serif" font-size="20" font-weight="700">Type student name</text>
+  <rect x="27" y="126" width="716" height="36" fill="#FFFFFF" stroke="#8B8B8B"/>
+  <rect x="768" y="126" width="191" height="36" fill="#A8CCF2"/>
+  <text x="826" y="150" fill="#09121E" font-family="Arial, sans-serif" font-size="14">Edit Selected</text>
+  <rect x="27" y="175" width="932" height="268" fill="#FFFFFF" stroke="#8D8D8D"/>
+  <rect x="27" y="175" width="932" height="27" fill="#F4F0EA" stroke="#8D8D8D"/>
+  <g fill="#111111" font-family="Arial, sans-serif" font-size="16" font-weight="700">
+    <text x="37" y="194">LRN</text><text x="148" y="194">Status</text><text x="247" y="194">Name</text>
+    <text x="483" y="194">Sex</text><text x="518" y="194">Birthdate</text><text x="633" y="194">Barangay</text>
+    <text x="727" y="194">Municipality</text><text x="847" y="194">Province</text>
+  </g>
+  <g fill="#121826" font-family="Arial, sans-serif" font-size="14">
+    <text x="42" y="222">117226130062</text><text x="157" y="222">ENROLLED</text><text x="247" y="222">STUDENT A</text><text x="483" y="222">M</text><text x="533" y="222">05/31/2008</text><text x="633" y="222">PUSO</text><text x="740" y="222">LA CASTELLANA</text><text x="858" y="222">NEGROS OCC.</text>
+    <text x="42" y="240">117224150004</text><text x="157" y="240">ENROLLED</text><text x="247" y="240">STUDENT B</text><text x="483" y="240">F</text><text x="533" y="240">09/16/2010</text><text x="633" y="240">CABAGNAAN</text><text x="740" y="240">LA CASTELLANA</text><text x="858" y="240">NEGROS OCC.</text>
+    <text x="42" y="258">117218150046</text><text x="157" y="258">ENROLLED</text><text x="247" y="258">STUDENT C</text><text x="483" y="258">M</text><text x="533" y="258">04/04/2010</text><text x="633" y="258">CABAGNAAN</text><text x="740" y="258">LA CASTELLANA</text><text x="858" y="258">NEGROS OCC.</text>
+    <text x="42" y="276">117218150135</text><text x="157" y="276">ENROLLED</text><text x="247" y="276">STUDENT D</text><text x="483" y="276">F</text><text x="533" y="276">02/19/2009</text><text x="633" y="276">CABAGNAAN</text><text x="740" y="276">LA CASTELLANA</text><text x="858" y="276">NEGROS OCC.</text>
+    <text x="42" y="294">117218150001</text><text x="157" y="294">ENROLLED</text><text x="247" y="294">STUDENT E</text><text x="483" y="294">M</text><text x="533" y="294">02/28/2010</text><text x="633" y="294">CABAGNAAN</text><text x="740" y="294">LA CASTELLANA</text><text x="858" y="294">NEGROS OCC.</text>
+  </g>
+  <rect x="27" y="454" width="932" height="222" fill="#FFFFFF" stroke="#8D8D8D"/>
+  <text x="43" y="462" fill="#BA742D" font-family="Arial, sans-serif" font-size="14">Selected Student</text>
+  <g fill="#252B35" font-family="Arial, sans-serif" font-size="18" font-weight="700">
+    <text x="60" y="503">LRN</text><text x="60" y="564">Name</text><text x="60" y="624">Sex</text>
+    <text x="509" y="493">Birthdate</text><text x="509" y="515">(mm/dd/yyyy)</text><text x="509" y="564">Barangay</text>
+    <text x="509" y="609">Municipality</text><text x="509" y="652">Province</text>
+  </g>
+  <g fill="#FFFFFF" stroke="#8D8D8D">
+    <rect x="180" y="476" width="283" height="33"/><rect x="180" y="536" width="308" height="33"/><rect x="180" y="595" width="308" height="33"/>
+    <rect x="679" y="476" width="241" height="33"/><rect x="679" y="536" width="241" height="33"/><rect x="679" y="586" width="241" height="33"/><rect x="679" y="635" width="241" height="33"/>
+  </g>
+  <rect x="27" y="693" width="932" height="151" fill="#FFFFFF" stroke="#8D8D8D"/>
+  <text x="43" y="701" fill="#BA742D" font-family="Arial, sans-serif" font-size="14">Enrollment Details</text>
+  <g fill="#252B35" font-family="Arial, sans-serif" font-size="18" font-weight="700">
+    <text x="60" y="754">Grade Level</text><text x="60" y="808">Contact No.</text><text x="518" y="763">Height (cm)</text>
+    <text x="749" y="763">Weight (kg)</text><text x="518" y="808">Street/Purok/Hda</text>
+  </g>
+  <g fill="#FFFFFF" stroke="#8D8D8D">
+    <rect x="223" y="733" width="219" height="33"/><rect x="180" y="789" width="262" height="33"/>
+    <rect x="660" y="734" width="72" height="33"/><rect x="859" y="734" width="72" height="33"/><rect x="679" y="789" width="255" height="33"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="14">
+    <rect x="162" y="872" width="156" height="44" fill="#B87732"/><rect x="341" y="872" width="158" height="44" fill="#1111B0"/>
+    <rect x="522" y="872" width="157" height="44" fill="#8A8A8A"/><rect x="702" y="872" width="157" height="44" fill="#3E3E3E"/>
+    <text x="223" y="898" fill="#FFFFFF">Enroll</text><text x="395" y="898" fill="#FFFFFF">Unenroll</text><text x="584" y="898" fill="#FFFFFF">Reset</text><text x="767" y="898" fill="#FFFFFF">Close</text>
+  </g>
+</svg>
