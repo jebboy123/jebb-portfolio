@@ -16,7 +16,7 @@ var PORTFOLIO_CONTENT = {
     "Over the years, I’ve worked on automation projects involving data validation, reporting systems, dashboard creation, workflow optimization, and operational data management across education, research, and industrial environments.",
     "Beyond technical skills, I enjoy solving real operational problems through automation and continuously exploring smarter ways to improve workflows and productivity. Whether it’s organizing messy data, automating reports, or creating reliable systems for teams, I build solutions that are practical, scalable, and easy to use."
   ],
-  projectsIntro: "Real-world automation systems designed to simplify reporting, organize data, and reduce manual work.",
+  projectsIntro: "Real-world automation systems designed to simplify reporting, organize data, capture leads, and reduce manual work.",
   skillsIntro: "Tools and technical strengths I use to build dependable data workflows.",
   contactTitle: "Let us automate your reporting work",
   contactIntro: "Send a message and I will get back to you soon.",
@@ -85,6 +85,18 @@ var PORTFOLIO_CONTENT = {
       result: "Brought KPI generation, charts, pivots, alerts, and exports into one dashboard.",
       image: "finance-dashboard-crop.png",
       tags: ["Excel VBA", "Dashboard", "Reporting"]
+    },
+    {
+      title: "n8n Lead Intake CRM Automation",
+      description:
+        "Built a webhook-based lead intake workflow that validates form submissions, normalizes contact data, checks Google Sheets for duplicate emails, creates or updates CRM records, scores lead quality, routes high-priority leads, logs activity, and returns a confirmation response.",
+      result: "Turned website lead submissions into a structured CRM-style workflow with deduplication, scoring, routing, and audit logging.",
+      image: "n8n-lead-intake-workflow.svg",
+      images: [
+        { src: "n8n-lead-intake-workflow.svg", label: "Workflow summary" },
+        { src: "n8n-lead-intake-canvas.svg", label: "Full n8n workflow canvas" }
+      ],
+      tags: ["n8n", "Google Sheets", "Webhook", "CRM Automation"]
     }
   ],
 

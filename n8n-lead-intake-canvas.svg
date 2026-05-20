@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 410" role="img" aria-labelledby="title desc">
+  <title id="title">Full n8n lead intake workflow canvas</title>
+  <desc id="desc">A wide n8n-style workflow canvas showing webhook intake, field editing, validation, duplicate checking, append or update rows, enrichment, scoring, high-value routing, logging, and webhook response.</desc>
+  <defs>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#d8dde8" opacity="0.7"/>
+    </pattern>
+    <filter id="nodeShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#5b6472" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="1440" height="410" fill="#fbfcff"/>
+  <rect width="1440" height="410" fill="url(#dots)" opacity="0.65"/>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="56" y="46" fill="#141922" font-size="22" font-weight="800">n8n Lead Intake CRM Automation</text>
+    <text x="56" y="73" fill="#667085" font-size="14">Webhook -> validation -> CRM deduplication -> scoring -> routing -> logs -> response</text>
+  </g>
+
+  <g fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M130 195H220"/>
+    <path d="M310 195h90"/>
+    <path d="M490 195h80"/>
+    <path d="M660 172h58"/>
+    <path d="M660 218h58"/>
+    <path d="M808 172h70"/>
+    <path d="M968 172h56"/>
+    <path d="M1114 152h60"/>
+    <path d="M1114 214h60"/>
+    <path d="M1264 184h62"/>
+  </g>
+
+  <g fill="none" stroke="#7a8798" stroke-width="2" stroke-dasharray="5 6" opacity="0.75">
+    <path d="M560 205 C590 240 610 252 638 238"/>
+    <path d="M1046 184 C1078 214 1090 226 1118 226"/>
+    <path d="M1046 170 C1078 146 1090 140 1118 140"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle" filter="url(#nodeShadow)">
+    <g transform="translate(42 145)">
+      <rect width="92" height="92" rx="8" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+      <circle cx="46" cy="34" r="17" fill="#fff0f4" stroke="#f06292"/>
+      <path d="M39 34h14M46 27v14" stroke="#e91e63" stroke-width="3" stroke-linecap="round"/>
+      <text x="46" y="104" fill="#1f2937" font-size="13" font-weight="700">Webhook</text>
+    </g>
+
+    <g transform="translate(222 145)">
+      <rect width="92" height="92" rx="8" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+      <rect x="31" y="25" width="31" height="31" rx="4" fill="#eef4ff" stroke="#4f46e5" stroke-width="2"/>
+      <path d="M38 47l17-17M53 30h8v8" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+      <text x="46" y="104" fill="#1f2937" font-size="13" font-weight="700">Edit Fields</text>
+    </g>
+
+    <g transform="translate(402 145)">
+      <rect width="92" height="92" rx="8" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+      <path d="M28 33h25c8 0 11 7 17 14M28 59h25c8 0 11-7 17-14" stroke="#0f766e" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <text x="46" y="104" fill="#1f2937" font-size="13" font-weight="700">If Valid</text>
+    </g>
+
+    <g transform="translate(572 122)">
+      <rect width="92" height="92" rx="8" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+      <rect x="31" y="25" width="30" height="34" rx="4" fill="#ecfdf3" stroke="#16a34a" stroke-width="2"/>
+      <path d="M31 37h30M41 25v34" stroke="#16a34a" stroke-width="2"/>
+      <text x="46" y="104" fill="#1f2937" font-size="13" font-weight="700">Get Rows</text>
+    </g>
+
+    <g transform="translate(572 228)">
+      <rect width="92" height="92" rx="8" fill="#fff" stroke="#f06292" stroke-width="2"/>
+      <circle cx="46" cy="39" r="16" fill="#fff0f4" stroke="#f06292"/>
+      <path d="M40 39h12M46 33v12" stroke="#e91e63" stroke-width="3" stroke-linecap="round"/>
+      <text x="46" y="104" fill="#1f2937" font-size="13" font-weight="700">Error Reply</text>
+    </g>
+
+    <g transform="translate(720 122)">
+      <rect width="92" height="92" rx="8" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+      <path d="M30 35h26c8 0 9 9 17 17M30 58h26c8 0 9-9 17-17" stroke="#0f766e" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <text x="46" y="104" fill="#1f2937" font-size="13" font-weight="700">Duplicate?</text>
+    </g>
+
+    <g transform="translate(880 85)">
+      <rect width="92" height="92" rx="8" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+      <rect x="31" y="25" width="30" height="34" rx="4" fill="#ecfdf3" stroke="#16a34a" stroke-width="2"/>
+      <path d="M39 42h14M46 35v14" stroke="#16a34a" stroke-width="3" stroke-linecap="round"/>
+      <text x="46" y="104" fill="#1f2937" font-size="13" font-weight="700">Update Row</text>
+    </g>
+
+    <g transform="translate(880 205)">
+      <rect width="92" height="92" rx="8" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+      <rect x="31" y="25" width="30" height="34" rx="4" fill="#ecfdf3" stroke="#16a34a" stroke-width="2"/>
+      <path d="M38 48l7 7 14-20" stroke="#16a34a" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="46" y="104" fill="#1f2937" font-size="13" font-weight="700">Append Row</text>
+    </g>
+
+    <g transform="translate(1026 122)">
+      <rect width="92" height="92" rx="8" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+      <path d="M31 58l9-22 12 13 9-24" stroke="#f97316" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="46" y="104" fill="#1f2937" font-size="13" font-weight="700">Score Lead</text>
+    </g>
+
+    <g transform="translate(1176 82)">
+      <rect width="92" height="92" rx="8" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+      <rect x="30" y="27" width="32" height="30" rx="4" fill="#eef4ff" stroke="#4f46e5" stroke-width="2"/>
+      <path d="M37 50l18-18" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+      <text x="46" y="104" fill="#1f2937" font-size="13" font-weight="700">Sales Alert</text>
+    </g>
+
+    <g transform="translate(1176 208)">
+      <rect width="92" height="92" rx="8" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+      <rect x="30" y="27" width="32" height="30" rx="4" fill="#eef4ff" stroke="#4f46e5" stroke-width="2"/>
+      <path d="M37 50l18-18" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+      <text x="46" y="104" fill="#1f2937" font-size="13" font-weight="700">Normal Route</text>
+    </g>
+
+    <g transform="translate(1328 142)">
+      <rect width="92" height="92" rx="8" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+      <rect x="31" y="25" width="30" height="34" rx="4" fill="#ecfdf3" stroke="#16a34a" stroke-width="2"/>
+      <path d="M38 35h16M38 45h16M38 55h10" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="46" y="104" fill="#1f2937" font-size="13" font-weight="700">Log + Reply</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" fill="#667085" font-size="11">
+    <text x="151" y="188">1 item</text>
+    <text x="332" y="188">1 item</text>
+    <text x="510" y="167">true</text>
+    <text x="510" y="228">false</text>
+    <text x="682" y="146">1 item</text>
+    <text x="832" y="111">true</text>
+    <text x="832" y="252">false</text>
+    <text x="1132" y="130">high</text>
+    <text x="1132" y="250">normal</text>
+  </g>
+</svg>

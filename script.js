@@ -152,9 +152,7 @@ function renderProjects(projects) {
             <span>${escapeHtml(project.title)}</span>
             <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
           </div>
-          <div class="project-thumb">
-            <img src="${escapeAttribute(project.image)}" alt="${escapeAttribute(project.title)} preview" loading="lazy" decoding="async" />
-          </div>
+          ${renderProjectThumb(project)}
           <div class="project-card-body">
             <div class="tag-list">
               ${(project.tags || []).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
@@ -164,6 +162,32 @@ function renderProjects(projects) {
       `
     )
     .join("");
+}
+
+function getProjectImages(project) {
+  const gallery = Array.isArray(project.images) && project.images.length > 0
+    ? project.images
+    : [{ src: project.image, label: project.title }];
+
+  return gallery.filter((image) => image?.src);
+}
+
+function renderProjectThumb(project) {
+  const images = getProjectImages(project);
+  const primary = images[0] || { src: project.image, label: project.title };
+  const secondary = images[1];
+
+  return `
+    <div class="project-thumb${secondary ? " project-thumb-gallery" : ""}">
+      <img src="${escapeAttribute(primary.src)}" alt="${escapeAttribute(primary.label || project.title)} preview" loading="lazy" decoding="async" />
+      ${secondary ? `
+        <div class="project-thumb-secondary" aria-hidden="true">
+          <img src="${escapeAttribute(secondary.src)}" alt="" loading="lazy" decoding="async" />
+        </div>
+        <span class="project-thumb-count">2 previews</span>
+      ` : ""}
+    </div>
+  `;
 }
 
 function renderToolShowcase(tools) {
@@ -336,7 +360,7 @@ function createProjectLightbox() {
       <i class="fas fa-xmark"></i>
     </button>
     <figure class="project-lightbox__figure">
-      <img src="" alt="" />
+      <div class="project-lightbox__media"></div>
       <figcaption></figcaption>
     </figure>
   `;
@@ -348,12 +372,21 @@ function createProjectLightbox() {
 function openProjectLightbox(project, lightbox, onOpen, onClose) {
   if (!project || !lightbox) return;
 
-  const image = lightbox.querySelector("img");
+  const media = lightbox.querySelector(".project-lightbox__media");
   const caption = lightbox.querySelector("figcaption");
   const closeButton = lightbox.querySelector(".project-lightbox__close");
+  const images = getProjectImages(project);
 
-  image.src = project.image;
-  image.alt = `${project.title} fullscreen preview`;
+  if (media) {
+    media.className = `project-lightbox__media${images.length > 1 ? " project-lightbox__media--gallery" : ""}`;
+    media.innerHTML = images
+      .map(
+        (image) => `
+          <img src="${escapeAttribute(image.src)}" alt="${escapeAttribute(image.label || project.title)} fullscreen preview" />
+        `
+      )
+      .join("");
+  }
   caption.textContent = project.title;
   lightbox.classList.add("active");
   lightbox.setAttribute("aria-hidden", "false");

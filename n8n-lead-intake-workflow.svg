@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">n8n Lead Intake CRM Automation workflow preview</title>
+  <desc id="desc">A workflow diagram showing webhook intake, validation, Google Sheets CRM, lead scoring, routing, logging, and response.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1525"/>
+      <stop offset="0.5" stop-color="#101c2c"/>
+      <stop offset="1" stop-color="#0f221c"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2afc85"/>
+      <stop offset="1" stop-color="#12b76a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.34"/>
+    </filter>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0v28" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="520" rx="28" fill="url(#bg)"/>
+  <rect width="960" height="520" rx="28" fill="url(#grid)"/>
+  <circle cx="818" cy="98" r="92" fill="#2afc85" opacity="0.08"/>
+  <circle cx="140" cy="430" r="120" fill="#2afc85" opacity="0.06"/>
+
+  <g transform="translate(56 48)">
+    <text x="0" y="0" fill="#e6e9f0" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" dominant-baseline="hanging">Lead Intake CRM Automation</text>
+    <text x="0" y="42" fill="#9aa6b8" font-family="Inter, Arial, sans-serif" font-size="16">Webhook form data cleaned, scored, routed, and logged with n8n + Google Sheets</text>
+  </g>
+
+  <g transform="translate(48 134)" filter="url(#shadow)">
+    <g fill="none" stroke="#2afc85" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+      <path d="M112 76h42"/>
+      <path d="M264 76h42"/>
+      <path d="M416 76h42"/>
+      <path d="M568 76h42"/>
+      <path d="M720 76h42"/>
+      <path d="M182 76l-13-9m13 9l-13 9"/>
+      <path d="M334 76l-13-9m13 9l-13 9"/>
+      <path d="M486 76l-13-9m13 9l-13 9"/>
+      <path d="M638 76l-13-9m13 9l-13 9"/>
+      <path d="M790 76l-13-9m13 9l-13 9"/>
+    </g>
+
+    <g font-family="Inter, Arial, sans-serif">
+      <g transform="translate(0 0)">
+        <rect width="118" height="152" rx="18" fill="#121d2d" stroke="#2afc85" stroke-opacity="0.42"/>
+        <circle cx="59" cy="43" r="22" fill="url(#green)" opacity="0.18"/>
+        <path d="M47 43h24M59 31v24" stroke="#2afc85" stroke-width="4" stroke-linecap="round"/>
+        <text x="59" y="94" text-anchor="middle" fill="#e6e9f0" font-size="15" font-weight="800">Webhook</text>
+        <text x="59" y="118" text-anchor="middle" fill="#9aa6b8" font-size="12">Form intake</text>
+      </g>
+
+      <g transform="translate(152 0)">
+        <rect width="118" height="152" rx="18" fill="#121d2d" stroke="#2afc85" stroke-opacity="0.42"/>
+        <circle cx="59" cy="43" r="22" fill="url(#green)" opacity="0.18"/>
+        <path d="M46 44l9 9 18-22" stroke="#2afc85" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="59" y="94" text-anchor="middle" fill="#e6e9f0" font-size="15" font-weight="800">Validate</text>
+        <text x="59" y="118" text-anchor="middle" fill="#9aa6b8" font-size="12">Name email company</text>
+      </g>
+
+      <g transform="translate(304 0)">
+        <rect width="118" height="152" rx="18" fill="#121d2d" stroke="#2afc85" stroke-opacity="0.42"/>
+        <circle cx="59" cy="43" r="22" fill="url(#green)" opacity="0.18"/>
+        <rect x="43" y="29" width="32" height="30" rx="4" fill="none" stroke="#2afc85" stroke-width="3"/>
+        <path d="M43 40h32M54 29v30" stroke="#2afc85" stroke-width="2"/>
+        <text x="59" y="94" text-anchor="middle" fill="#e6e9f0" font-size="15" font-weight="800">Sheets CRM</text>
+        <text x="59" y="118" text-anchor="middle" fill="#9aa6b8" font-size="12">Deduplicate</text>
+      </g>
+
+      <g transform="translate(456 0)">
+        <rect width="118" height="152" rx="18" fill="#121d2d" stroke="#2afc85" stroke-opacity="0.42"/>
+        <circle cx="59" cy="43" r="22" fill="url(#green)" opacity="0.18"/>
+        <path d="M44 54l10-20 12 11 8-18" stroke="#2afc85" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="59" y="94" text-anchor="middle" fill="#e6e9f0" font-size="15" font-weight="800">Score</text>
+        <text x="59" y="118" text-anchor="middle" fill="#9aa6b8" font-size="12">Priority logic</text>
+      </g>
+
+      <g transform="translate(608 0)">
+        <rect width="118" height="152" rx="18" fill="#121d2d" stroke="#2afc85" stroke-opacity="0.42"/>
+        <circle cx="59" cy="43" r="22" fill="url(#green)" opacity="0.18"/>
+        <path d="M42 35h18c12 0 12 18 24 18M42 53h18c12 0 12-18 24-18" stroke="#2afc85" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <text x="59" y="94" text-anchor="middle" fill="#e6e9f0" font-size="15" font-weight="800">Route</text>
+        <text x="59" y="118" text-anchor="middle" fill="#9aa6b8" font-size="12">Sales action</text>
+      </g>
+
+      <g transform="translate(760 0)">
+        <rect width="118" height="152" rx="18" fill="#121d2d" stroke="#2afc85" stroke-opacity="0.42"/>
+        <circle cx="59" cy="43" r="22" fill="url(#green)" opacity="0.18"/>
+        <path d="M47 32h24M47 43h24M47 54h16" stroke="#2afc85" stroke-width="4" stroke-linecap="round"/>
+        <text x="59" y="94" text-anchor="middle" fill="#e6e9f0" font-size="15" font-weight="800">Logs</text>
+        <text x="59" y="118" text-anchor="middle" fill="#9aa6b8" font-size="12">Audit trail</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(110 348)">
+    <rect width="740" height="88" rx="18" fill="#0b1220" stroke="#2afc85" stroke-opacity="0.28"/>
+    <text x="32" y="32" fill="#2afc85" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800">RESPONSE</text>
+    <text x="32" y="58" fill="#e6e9f0" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">Thank you, your request was received.</text>
+    <text x="520" y="52" fill="#9aa6b8" font-family="Inter, Arial, sans-serif" font-size="13">CRM updated and activity logged</text>
+  </g>
+</svg>
